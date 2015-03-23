@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WanMusic</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">当前没有分享的音乐信息</string>
+    <string name="share">生成二维码</string>
+    <string name="user_name">用户名：</string>
+    <string name="user_password">密 码：</string>
+    <string name="login">登 录</string>
+    <string name="register">注 册</string>
+    <string name="nameinput">请输入用户名!</string>
+    <string name="passinput">请输入密码！</string>
+    <string name="ageinput">请输入年龄！</string>
+    <string name="reset">重 置</string>
+    <string name="sex">性 别</string>
+    <string name="boy">男</string>
+    <string name="girl">女</string>
+    <string name="age">年 龄</string>
+    <string name="menu_settings">Settings</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="gotolist">进入分享列表</string>
+    <string name="scan">扫描二维码</string>
+
+</resources>

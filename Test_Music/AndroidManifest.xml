@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test_music"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/music"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+         <activity
+            android:name="com.music.activity.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.music.activity.MainActivity">
+            <intent-filter >
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="multipart/*" />
+                <data android:mimeType="text/*" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.music.activity.MusicList">
+        </activity>
+        
+        <activity
+            android:name="com.music.activity.RegisterActivity">
+        </activity>
+        
+        <activity
+            android:name="com.music.activity.CodeActivity">
+        </activity>
+        
+        <activity
+            android:name="com.music.activity.ScanActivity">
+        </activity>
+        
+        <activity
+            android:name="com.music.activity.MipcaCaptureActivity">
+        </activity>
+        
+    </application>
+
+</manifest>

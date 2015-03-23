@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name"/>
+        
+        <EditText
+            android:id="@+id/username" 
+            android:hint="@string/nameinput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_password"/>
+        
+        <EditText
+            android:id="@+id/pwd" 
+            android:inputType="textPassword"
+            android:hint="@string/passinput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age"/>
+        
+        <EditText
+            android:id="@+id/age" 
+            android:hint="@string/ageinput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="center">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"/>
+        
+        <RadioGroup 
+            android:id="@+id/radioGroup" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                    <RadioButton 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:id="@+id/radioMale" 
+                        android:text="@string/boy" 
+                        android:checked="true">
+                    </RadioButton>
+                    <RadioButton 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:id="@+id/radioFemale" 
+                        android:text="@string/girl">
+                    </RadioButton>    
+  </RadioGroup>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="center">
+        
+        <Button 
+            android:id="@+id/regi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"/>
+        
+        <Button 
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"/>
+    </LinearLayout>
+
+</LinearLayout>
